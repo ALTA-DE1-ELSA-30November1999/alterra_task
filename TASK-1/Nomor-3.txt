@@ -1,0 +1,11 @@
+How to pull multiple values at once?
+
+# pulls multiple values but from a single
+pulled_value_1, pulled_value_2 = ti.xcom_pull(key=['my_key_1', 'my_key_2'], task_ids='my_task_id')
+
+# pulls multiple values but from multiple tasks
+pulled_value_1, pulled_value_2 = ti.xcom_pull(key=None, task_ids=['my_task_id_1', 'my_task_id_2'])
+
+# pulls one value
+pulled_value = ti.xcom_pull(key=None, task_ids='my_task_id')
+

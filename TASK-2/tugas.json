@@ -1,0 +1,17 @@
+{
+    "input": {
+        "first_name": "sandra",
+        "country": "US"
+    },
+    "details": {
+        "credits_used": 1,
+        "duration": "13ms",
+        "samples": 9273,
+        "country": "US",
+        "first_name_sanitized": "sandra"
+    },
+    "result_found": true,
+    "first_name": "Sandra",
+    "probability": 0.98,
+    "gender": "female"
+}

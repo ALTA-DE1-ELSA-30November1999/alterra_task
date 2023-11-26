@@ -1,0 +1,11 @@
+1. Pada airflow dashboard, pilih admin kemudian connection
+2. Isi connection id dan description sesuai nama yang diinginkan
+3. Pilih connection type. disini pilih Postgres 
+4. Isi host dengan host.docker.internal
+5. Isi schema, login, dan password dengan airflow, lalu isi port dengan 5432
+6. Didalam DAG buat PostgresOperator yang terhubun ke postgres dan buat tabel json-elsa
+7. Koneksi ke postgres melalui postgres_conn_id='pg_conn_id'
+8. Buat fungsi untuk terhubung ke database postgresql melalui PostgresHook, kemudian data dibaca dari file json, lalu data dimuat ke postgresql
+9. Buat fungsi yang menjalankan load_data_to_db_task
+10. Pada dashboard Airflow DAG, jalankan DAG alterra_hook_elsa. Pada detail dashboard DAG terlihat ada 2 tugas yang ditandai berhasil
+11. Buat koneksi ke database PostgreSQL pada Dbeaver, untuk memeriksa apakah data sudah terkirim atau belum.

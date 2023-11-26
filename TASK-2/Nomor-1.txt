@@ -1,0 +1,10 @@
+1. Buat akun di gender API dan dapatkan API
+2. Pada airflow dashboard, pilih admin kemudian connection
+3. Isi connection id dan description sesuai nama yang diinginkan
+4. Pilih connection type. disini pilih HTTP
+5. Isi host : https://gender-api.com/v2 yang berasal dari API Documentation
+6. Isi extra : {"Authorization" : "Barer 191fa28f57bf0f2ccc624715e3bb1fdc4d22b8f0e02e7c28920a1616c9bff8ad"}
+7. Kemudian save. daftar connection bisa dilihat didbeaver di tabel connection
+8. Pada indetify name ganti endpoint="/country-of-origin" dan data='{"full_name":"sophia5342@gmail.com"}', yang merujuk pada API Documentation
+9. Pada airflow dashboard pilih alterra_connection_elsa kemudian nyalakan dan klik triger, lalu running akan berjalan. dan suskses jika berwarna hijau
+10. Pada alterra_connection_elsa terdapat get_statistic, post_name, dan print uri yang dapat dilihat masing-masing lognya
